@@ -18,4 +18,4 @@ Y las relaciones se pueden identificar:
 - Partido y deporte una agregación.
 - Deporte y Club una composición.
 - Club y cancha una composición.
-- Cancha y partido una asociación.
+- Cancha y partido una agregación.
