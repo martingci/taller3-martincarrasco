@@ -1,8 +1,10 @@
+package org.example;
+
 public class Entrenador {
 	private String nombre;
 	private Deporte deporteE;
 	private int aexperiencia;
-	private Equipos equipo;
+	private Equipo equipo;
 	private Deporte deporte;
 
 	public String getNombre() {

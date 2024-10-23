@@ -1,4 +1,7 @@
+package org.example;
+
 import java.util.ArrayList;
+import java.util.Date;
 
 public class Club {
 	private String nombre;
@@ -14,6 +17,35 @@ public class Club {
 	}
 
 	public ArrayList<Cancha> verCanchas() {
-		throw new UnsupportedOperationException();
+		return this.canchas;
 	}
+
+	public boolean agregarDeporte (Deporte deporteAAgregar)  {
+		for (Deporte deporte : deportes) {
+			if (deporte.equals(deporteAAgregar)) {
+				return false;
+			}
+		}
+		this.deportes.add(deporteAAgregar);
+		return true;
+	}
+
+	public boolean crearPartido (Equipo equipo1, Equipo equipo2, Cancha cancha, Date inicio, Date termino) {
+		for (Deporte deporte : deportes) {
+			for (Equipo equipo : deporte.obtenerEquipos()) {
+				if (equipo.equals(equipo1) || equipo.equals(equipo2)) {
+					Partido partido = new Partido();
+					partido.setEquipoLocal(equipo1);
+					partido.setEquipoEnemigo(equipo2);
+					partido.setCancha(cancha);
+					partido.setfechaInicio(inicio);
+					partido.setfechaTermino(termino);
+					deporte.partidos
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+
 }

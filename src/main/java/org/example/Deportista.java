@@ -1,9 +1,11 @@
+package org.example;
+
 public class Deportista {
 	private String nombre;
 	private String apellido;
 	private String contacto;
 	private Deporte deporte;
-	private Equipos equipo;
+	private Equipo equipo;
 
 	public String getNombre() {
 		return this.nombre;

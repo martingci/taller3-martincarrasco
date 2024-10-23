@@ -1,4 +1,7 @@
+package org.example;
+
 import java.util.ArrayList;
+import java.util.Date;
 
 public class Partido {
 	private Equipo equipoLocal;
@@ -9,7 +12,7 @@ public class Partido {
 	private Date fechaTermino;
 	private Deporte deporte;
 	private ArrayList<Cancha> canchas = new ArrayList<Cancha>();
-	private ArrayList<Equipos> equipos = new ArrayList<Equipos>();
+	private ArrayList<Equipo> equipos = new ArrayList<Equipo>();
 
 	public Equipo getEquipoLocal() {
 		return this.equipoLocal;
@@ -42,4 +45,21 @@ public class Partido {
 	public void setCancha(Cancha cancha) {
 		this.cancha = cancha;
 	}
+
+	public void setfechaInicio(Date fechaInicio) {
+		this.fechaInicio = fechaInicio;
+	}
+
+	public void setfechaTermino(Date fechaTermino) {
+		this.fechaTermino = fechaTermino;
+	}
+
+	public Date getFechaInicio() {
+		return this.fechaInicio;
+	}
+
+	public Date getFechaTermino() {
+		return this.fechaTermino;
+	}
+
 }
