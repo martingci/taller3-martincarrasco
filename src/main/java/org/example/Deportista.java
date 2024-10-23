@@ -7,6 +7,13 @@ public class Deportista {
 	private Deporte deporte;
 	private Equipo equipo;
 
+	public Deportista(String nombre, String apellido, String contacto, Deporte deporte) {
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.contacto = contacto;
+		this.deporte = deporte;
+	}
+
 	public String getNombre() {
 		return this.nombre;
 	}

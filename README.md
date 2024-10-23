@@ -23,4 +23,4 @@ Y las relaciones se pueden identificar:
 - Deporte y entrenador una agregación.
 - Equipo y deporte una agregación. 
 
-![DiagramaDeClases](/img.png)
+![DiagramaDeClases](/gestionUMLfoto.jpg)

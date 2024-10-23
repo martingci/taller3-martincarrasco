@@ -40,12 +40,16 @@ public class Club {
 					partido.setCancha(cancha);
 					partido.setfechaInicio(inicio);
 					partido.setfechaTermino(termino);
-					deporte.partidos
+					deporte.AgregarPartido(partido);
 					return true;
 				}
 			}
 		}
 		return false;
+	}
+
+	Club (String nombre) {
+		this.nombre = nombre;
 	}
 
 }

@@ -74,6 +74,21 @@ public class Deporte {
 		return false;
 	}
 
+	public boolean AgregarPartido (Partido partido) {
+		for (Partido partidoAgregado : partidos) {
+			if (partidoAgregado.equals(partido)) {
+				return false;
+			}
+		}
+		this.partidos.add(partido);
+		return true;
+	}
 
+	public ArrayList<Equipo> obtenerEquipos() {
+		return equipos;
+	}
 
+	public Deporte (String nombre) {
+		this.nombre = nombre;
+	}
 }
