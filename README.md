@@ -19,3 +19,6 @@ Y las relaciones se pueden identificar:
 - Deporte y Club una composición.
 - Club y cancha una composición.
 - Cancha y partido una agregación.
+- Deporte y deportista una agregación.
+- Deporte y entrenador una agregación.
+- Equipo y deporte una agregación. 
